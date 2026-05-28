@@ -1,11 +1,272 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitFlow</title>
+  <meta name="description" content="FitFlow ist ein Fitness-Dashboard" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/style.css" />
 </head>
 <body>
-    Test
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="./index.html">Fit<span>Flow</span></a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="./index.html" class="active">Start</a></li>
+          <li><a href="./pages/exercises.html">Übungen</a></li>
+          <li><a href="./pages/bmi.html">BMI</a></li>
+          <li><a href="./pages/schedule.html">Agenda</a></li>
+          <li><a href="./pages/about.html">Einblick</a></li>
+          <li><a href="./pages/contact.html">Kontakt</a></li>
+        </ul>
+      </nav>
+
+      <button class="menu-toggle" aria-label="Menü">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+
+    <div class="mobile-menu">
+      <ul>
+        <li><a href="./index.html" class="active">Start</a></li>
+        <li><a href="./pages/exercises.html">Übungen</a></li>
+        <li><a href="./pages/bmi.html">BMI</a></li>
+        <li><a href="./pages/schedule.html">Agenda</a></li>
+        <li><a href="./pages/about.html">Einblick</a></li>
+        <li><a href="./pages/contact.html">Kontakt</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Aufmerksame Fitness</span>
+          <h1>Beweg dich bewusst.<br />Trainiere mit <em>Herzlichkeit</em>.</h1>
+          <p>FitFlow verbindet sanfte Anleitung mit bewährten Trainingsprinzipien - damit sich Ihr Training weniger wie eine lästige Pflicht und mehr wie ein tägliches Ritual anfühlt.</p>
+
+          <div class="hero-cta">
+            <a href="./pages/exercises.html" class="btn btn-primary">Übungen entdecken</a>
+            <a href="./pages/bmi.html" class="btn btn-outline">BMI berechnen</a>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <img src="./assets/hero-img.jpg" alt="Hero Section Img" />
+        </div>
+      </div>
+    </section>
+
+    <section style="background: var(--bg-2);">
+      <div class="container">
+        <div class="section-head">
+          <h2>Für den Alltag gemacht</h2>
+          <p>Eine übersichtliche, zielgerichtete Plattform, die Ihnen hilft, sich besser zu bewegen - ohne Ablenkung.</p>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="card">
+            <div class="feature-icon">
+              <span class="material-symbols-outlined">fitness_center</span>
+            </div>
+            <h3>Ausgewählte Übungen</h3>
+            <p>Handverlesene Übungen mit klaren Anweisungen, geeignet für jedes Level</p>
+          </article>
+
+          <article class="card">
+            <div class="feature-icon">
+              <span class="material-symbols-outlined">monitor_weight</span>
+            </div>
+            <h3>Cleveres BMI-Tool</h3>
+            <p>Ermitteln Sie Ihren Ausgangspunkt mit einem einfachen, benutzerfreundlichen Rechner</p>
+          </article>
+
+          <article class="card">
+            <div class="feature-icon">
+              <span class="material-symbols-outlined">calendar_month</span>
+            </div>
+            <h3>Wochenplan</h3>
+            <p>Planen Sie Ihre Woche mit einer übersichtlichen Kalenderansicht aller Termine</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <h2>Diese Woche beliebt</h2>
+          <p>Eine Handvoll Bewegungen, zu denen unsere Community immer wieder zurückkehrt</p>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="exercise-card">
+            <div class="thumb">
+              <img src="./assets/exercises/ex-1.jpg" alt="Push up">
+            </div>
+            <div class="body">
+              <h3>Push Up</h3>
+              <div class="badges">
+                <span class="badge badge-primary">Brust</span>
+                <span class="badge">Körpergewicht</span>
+              </div>
+              <div class="meta">
+                <span><span class="material-symbols-outlined">schedule</span>10 Min</span>
+                <span><span class="material-symbols-outlined">star</span>Anfänger</span>
+              </div>
+              <a href="./pages/exercises/ex-1.html" class="btn btn-outline">Details anzeigen</a>
+            </div>
+          </article>
+
+          <article class="exercise-card">
+            <div class="thumb">
+              <img src="./assets/exercises/ex-2.jpg" alt="Bicep Curl">
+            </div>
+            <div class="body">
+              <h3>Bizeps-Curl</h3>
+              <div class="badges">
+                <span class="badge badge-primary">Arme</span>
+                <span class="badge">Kurzhantel</span>
+              </div>
+              <div class="meta">
+                <span><span class="material-symbols-outlined">schedule</span>10 Min</span>
+                <span><span class="material-symbols-outlined">star</span>Mittelstufe</span>
+              </div>
+              <a href="./pages/exercises/ex-2.html" class="btn btn-outline">Details anzeigen</a>
+            </div>
+          </article>
+
+          <article class="exercise-card">
+            <div class="thumb">
+              <img src="./assets/exercises/ex-3.jpg" alt="Bench press">
+            </div>
+            <div class="body">
+              <h3>Bankdrücken</h3>
+              <div class="badges">
+                <span class="badge badge-primary">Brust</span>
+                <span class="badge">Maschine</span>
+              </div>
+              <div class="meta">
+                <span><span class="material-symbols-outlined">schedule</span>18 Min</span>
+                <span><span class="material-symbols-outlined">star</span>Mittelstufe</span>
+              </div>
+              <a href="./pages/exercises/ex-3.html" class="btn btn-outline">Details anzeigen</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section style="background: var(--bg-2);">
+      <div class="container">
+        <div class="section-head">
+          <h2>Ihre Woche auf einen Blick</h2>
+          <p>Ein ausgewogener Rhythmus aus Kraft, Cardio und Erholung.</p>
+        </div>
+
+        <div class="grid grid-4">
+          <article class="card"><h3>Mo</h3><p>Brust & Trizeps</p></article>
+          <article class="card"><h3>Mi</h3><p>Cardio Flow</p></article>
+          <article class="card"><h3>Fr</h3><p>Beintraining</p></article>
+          <article class="card"><h3>So</h3><p>Aktive Erholung</p></article>
+        </div>
+
+        <div style="text-align:center;margin-top:32px;">
+          <a href="./pages/schedule.html" class="btn btn-primary">Den vollständigen Zeitplan anzeigen</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <h2>Beliebt bei den stillen Machern</h2>
+          <p>Geschichten von Menschen, die beständige, sanfte Routinen entwickeln</p>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="testimonial">
+            <p>"Mit FitFlow fühlt sich das Training endlich entspannt an. Die Benutzeroberfläche ist das genaue Gegenteil dieser lauten Fitness-Apps."</p>
+            <div class="who">
+              <img src="./assets/user.jpg" alt="user-1-photo">
+              <div>
+                <strong>Maksym Kr.</strong>
+                <span>Täglicher Nutzer</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial">
+            <p>"Einfach, schön und mit genau den richtigen Funktionen. Die Wochenansicht ist mein Lieblingsfeature."</p>
+            <div class="who">
+              <img src="./assets/user.jpg" alt="user-2-photo">
+              <div>
+                <strong>Maksym Kr.</strong>
+                <span>Täglicher Nutzer</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial">
+            <p>"Ich liebe, dass es sich wie ein Wellness-Journal anfühlt und nicht wie ein Tracker. Sehr empfehlenswert."</p>
+            <div class="who">
+              <img src="./assets/user.jpg" alt="user-3-photo">
+              <div>
+                <strong>Maksym Kr.</strong>
+                <span>Täglicher Nutzer</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand" style="margin-bottom:10px;">Fit<span>Flow</span></div>
+          <p style="color:var(--text-soft);font-size:0.9rem;max-width:320px;">
+            Ein unaufdringlicher, moderner Fitnessbegleiter für alle, die sich täglich bewegen
+          </p>
+        </div>
+
+        <div>
+          <h4>Entdecken</h4>
+          <ul>
+            <li><a href="./pages/exercises.html">Übungen</a></li>
+            <li><a href="./pages/bmi.html">BMI</a></li>
+            <li><a href="./pages/schedule.html">Agenda</a></li>
+            <li><a href="./pages/about.html">Einblick</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Rechtliches</h4>
+          <ul>
+            <li><a href="./pages/impressum.html">Impressum</a></li>
+            <li><a href="./pages/datenschutz.html">Datenschutz</a></li>
+            <li><a href="./pages/sources.html">Quellen</a></li>
+            <li><a href="./pages/contact.html">Kontakt</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">© 2026 FitFlow - Alle Rechte vorbehalten</div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
